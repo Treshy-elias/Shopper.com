@@ -1,0 +1,37 @@
+.popular {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.popular h1 {
+    text-transform: uppercase;
+}
+.popular hr {
+    width: 100px;
+    height: 4px;
+    border-radius: 7px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+.popular-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .popular-items {
+        width: 100%;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+       
+}
+

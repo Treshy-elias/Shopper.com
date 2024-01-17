@@ -1,0 +1,40 @@
+.newCollections {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.newCollections h1 {
+    text-transform: uppercase;
+}
+.newCollections hr {
+    width: 100px;
+    height: 4px;
+    border-radius: 7px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+
+}
+.newCollections-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .newCollections-products {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+       
+}
+

@@ -1,0 +1,196 @@
+body, h1, h2, h3, p, div, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 1px 3px -2px black;
+    max-width: 100%;
+  
+}
+.myShop-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.logo img {
+    width: 50px;
+}
+#check {
+    display: none;
+}
+.menu-bar {
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+}
+.myShop-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -300px;
+}
+.myShop-category ul {
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    color: #626262;
+
+}
+.myShop-category ul li {
+    
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    flex-direction: column;
+}
+.myShop-category ul li hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 6px;
+    background: #FF4141;
+
+    
+}
+.nav-login-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s;
+    margin-top: 5px;
+}
+.nav-login-cart button {
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-right: 30px;
+    font-size: 20px ;
+    box-shadow: 0 0 2px;
+    cursor: pointer;
+    transition: .5s;
+   
+}
+.nav-login-cart button:hover {
+    background-color: green;
+    color: white;
+}
+.cart-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: -22px;
+    margin-left: -10px;
+    color: white;
+}
+/* ... previous styles ... */
+
+.nav-login-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s; /* Add transition for smoother effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .myShop-logos {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+
+    .menu-bar {
+        display:flex;
+        margin-left: auto;
+        margin-right: 19px
+    }
+    .myShop-category{
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .myShop-category ul {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        right: -110%;
+        z-index: 2;
+        text-align: center;
+        background-color: rgb(59, 44, 44);
+        transition: .5s;
+        flex-direction: column;
+        margin-top: 40px;
+        color: white;
+        justify-content: flex-start;
+        gap: 2px;
+    }
+
+    .myShop-category ul li {
+        display: flex;
+        font-size: 18px;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    
+        
+    }
+    .myShop-category ul li:hover {
+        background-color: gray;
+    }
+    
+    .myShop-category ul li hr{
+        display: none;
+    }
+
+    .nav-login-cart {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 2;
+        background-color: rgb(59, 44, 44);
+        transition: right 0.5s; /* Add transition for smoother effect */
+        right: -110%;
+        top: 290px; /* Adjust the top position as needed */
+        color: white;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+    .nav-login-cart button {
+        margin: auto;
+    }
+
+    .cart-counter {
+        margin-top: -50px;
+        margin-right: -50px;
+    }
+
+}
+
+

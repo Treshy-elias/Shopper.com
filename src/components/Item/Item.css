@@ -1,0 +1,38 @@
+.item {
+    width: 233px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.item img {
+    width: 100%;
+    height: 278px;
+    padding: 5px;
+    transition: .5s;
+    align-self: center;
+    
+}
+.item img:hover {
+    transform: scale(1.09);
+}
+.item p {
+    margin: 0 4px;
+}
+.item-prices {
+    display: flex;
+    gap: 10px;
+    margin: 0 4px;
+    font-size: 12px
+}
+.new-price {
+    font-weight: 600;
+}
+.old-price {
+    font-weight: 300;
+    text-decoration: line-through;
+}
+@media (max-width: 460px) {
+    .item {
+        border: 1px solid gray;
+    }
+}
